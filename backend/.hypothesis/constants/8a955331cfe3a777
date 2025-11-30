@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\api\serializers.py
+# hypothesis_version: 6.148.3
+
+['cost', 'duration_minutes', 'entry', 'id', 'image_in', 'image_out', 'key', 'plate', 'timestamp_in', 'timestamp_out', 'value']

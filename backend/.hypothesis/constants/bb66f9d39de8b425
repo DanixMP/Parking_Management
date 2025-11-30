@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\api\urls.py
+# hypothesis_version: 6.148.3
+
+['active-cars', 'add-plate', 'admin-get-users', 'admin-update-role', 'admin/users/', 'auth-login', 'auth-logout', 'auth-me', 'auth/login/', 'auth/logout/', 'auth/me/', 'delete-plate', 'detect-entry', 'detect-entry/', 'detect-exit', 'detect-exit/', 'detect-plate', 'detect-plate/', 'entries', 'entry/', 'exit/', 'exits', 'get-plates', 'parking-status', 'plates/', 'plates/add/', 'register-entry', 'register-exit', 'reset-database', 'reset/', 'settings', 'settings/', 'status/', 'wallet-balance', 'wallet-charge', 'wallet-transactions', 'wallet/balance/', 'wallet/charge/', 'wallet/transactions/']

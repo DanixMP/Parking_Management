@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\parking_api\urls.py
+# hypothesis_version: 6.148.3
+
+['admin/', 'api.urls', 'api/']

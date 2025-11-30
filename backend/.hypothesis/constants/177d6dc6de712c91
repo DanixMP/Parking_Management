@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\api\middleware.py
+# hypothesis_version: 6.148.3
+
+['..', 'AUTH_REQUIRED', 'HTTP_AUTHORIZATION', 'Token ', 'code', 'error', 'role', 'src', 'success', 'user_data', 'user_id']

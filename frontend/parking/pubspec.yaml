@@ -11,6 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   cupertino_icons: ^1.0.8
   
@@ -20,7 +22,7 @@ dependencies:
   
   shamsi_date: ^1.0.1
   
-  intl: ^0.19.0
+  intl: ^0.20.2
   
   # Camera with Windows support
   camera: ^0.11.0
@@ -37,6 +39,9 @@ dependencies:
   # File picker and saver
   file_picker: ^8.1.6
   path_provider: ^2.1.5
+  
+  # Secure storage for auth tokens
+  flutter_secure_storage: ^9.0.0
 
 dev_dependencies:
   flutter_test:
@@ -45,5 +50,5 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 
 flutter:
-
+  generate: true
   uses-material-design: true

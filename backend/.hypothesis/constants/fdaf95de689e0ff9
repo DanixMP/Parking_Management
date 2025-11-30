@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\api\apps.py
+# hypothesis_version: 6.148.3
+
+['=', 'api', 'gunicorn', 'runserver', '✓ YOLO models ready']

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-h3w0k90dw1$w=f#l)gy+bltai&mhcrs3$vv4jyqz@^(k5wgu8$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['testserver', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'api.middleware.TokenAuthenticationMiddleware',
 ]
 
 ROOT_URLCONF = 'parking_api.urls'

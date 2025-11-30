@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\api\models.py
+# hypothesis_version: 6.148.3
+
+[255, '-timestamp', 'Admin', 'Charge', 'Payment', 'Refund', 'SuperUser', 'User', 'active_cars', 'admin', 'auth_tokens', 'charge', 'entries', 'entry_id', 'exits', 'payment', 'plate', 'refund', 'settings', 'superuser', 'transactions', 'user', 'user_id', 'user_plates', 'users', 'wallet_id', 'wallets']

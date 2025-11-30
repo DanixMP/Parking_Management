@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\src\yolo_loader.py
+# hypothesis_version: 6.148.3
+
+['CharsYolo.pt', '__main__', 'cpu', 'cuda', 'ignore', 'plateYolo.pt', 'weights_only']

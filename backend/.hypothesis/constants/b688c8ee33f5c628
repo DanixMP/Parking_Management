@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\api\yolo_service.py
+# hypothesis_version: 6.148.3
+
+[0.3, '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '?', 'Invalid image format', '\\s+', 'bbox', 'confidence', 'cpu', 'cuda', 'error', 'plate', 'pred', 'src', 'success', 'traceback', 'x1', 'x2', 'y1', 'y2', 'الف', 'ب', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ل', 'م', 'ن', 'ه', 'و', 'پ', 'چ', 'ژ', 'ک', 'گ', 'ی', '✓ Plate model loaded']

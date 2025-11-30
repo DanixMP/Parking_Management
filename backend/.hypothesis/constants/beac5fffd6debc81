@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\parking_api\settings.py
+# hypothesis_version: 6.148.3
+
+[10485760, '/media/', 'APP_DIRS', 'BACKEND', 'DIRS', 'ENGINE', 'NAME', 'OPTIONS', 'UTC', 'api', 'context_processors', 'corsheaders', 'default', 'django.contrib.admin', 'django.contrib.auth', 'en-us', 'media', 'parking.db', 'parking_api.urls', 'rest_framework', 'src', 'static/']

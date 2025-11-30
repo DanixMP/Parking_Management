@@ -1,0 +1,4 @@
+# file: D:\Projects\Parking\backend\api\views.py
+# hypothesis_version: 6.148.3
+
+['%Y-%m-%d %H:%M:%S', '-timestamp_in', '-timestamp_out', '..', 'GET', 'GET_USER_FAILED', 'INVALID_PHONE_FORMAT', 'INVALID_REQUEST', 'Invalid request data', 'LOGIN_FAILED', 'LOGOUT_FAILED', 'POST', 'PUT', 'active_cars', 'auth_token', 'capacity', 'code', 'confidence', 'details', 'entry_id', 'error', 'free_slots', 'id', 'image', 'image_path', 'message', 'phone_number', 'plate', 'price_per_hour', 'src', 'success', 'token', 'user', 'wallet']

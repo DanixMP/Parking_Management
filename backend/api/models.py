@@ -57,3 +57,96 @@ class Setting(models.Model):
 
     def __str__(self):
         return f"{self.key}: {self.value}"
+
+
+class User(models.Model):
+    """Model for user accounts"""
+    phone_number = models.CharField(max_length=15, unique=True)
+    role = models.CharField(
+        max_length=20,
+        choices=[
+            ('user', 'User'),
+            ('admin', 'Admin'),
+            ('superuser', 'SuperUser')
+        ],
+        default='user'
+    )
+    created_at = models.DateTimeField()
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        db_table = 'users'
+        managed = False
+
+    def __str__(self):
+        return f"{self.phone_number} ({self.role})"
+
+
+class Wallet(models.Model):
+    """Model for user wallets"""
+    user = models.OneToOneField(User, on_delete=models.CASCADE, db_column='user_id')
+    balance = models.IntegerField(default=0)
+    last_updated = models.DateTimeField()
+
+    class Meta:
+        db_table = 'wallets'
+        managed = False
+
+    def __str__(self):
+        return f"Wallet for {self.user.phone_number}: {self.balance} Rials"
+
+
+class Transaction(models.Model):
+    """Model for wallet transactions"""
+    wallet = models.ForeignKey(Wallet, on_delete=models.CASCADE, db_column='wallet_id')
+    transaction_type = models.CharField(
+        max_length=20,
+        choices=[
+            ('charge', 'Charge'),
+            ('payment', 'Payment'),
+            ('refund', 'Refund')
+        ]
+    )
+    amount = models.IntegerField()
+    timestamp = models.DateTimeField()
+    description = models.TextField(blank=True)
+    exit_id = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        db_table = 'transactions'
+        managed = False
+        ordering = ['-timestamp']
+
+    def __str__(self):
+        return f"{self.transaction_type}: {self.amount} Rials at {self.timestamp}"
+
+
+class UserPlate(models.Model):
+    """Model for user-registered license plates"""
+    user = models.ForeignKey(User, on_delete=models.CASCADE, db_column='user_id')
+    plate = models.CharField(max_length=20)
+    registered_at = models.DateTimeField()
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        db_table = 'user_plates'
+        managed = False
+        unique_together = ('user', 'plate')
+
+    def __str__(self):
+        return f"{self.plate} - {self.user.phone_number}"
+
+
+class AuthToken(models.Model):
+    """Model for authentication tokens"""
+    user = models.ForeignKey(User, on_delete=models.CASCADE, db_column='user_id')
+    token = models.CharField(max_length=255, unique=True)
+    created_at = models.DateTimeField()
+    expires_at = models.DateTimeField()
+
+    class Meta:
+        db_table = 'auth_tokens'
+        managed = False
+
+    def __str__(self):
+        return f"Token for {self.user.phone_number}"
