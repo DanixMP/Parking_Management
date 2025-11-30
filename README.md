@@ -231,7 +231,7 @@ This project is private and proprietary.
 
 ## 👥 Contributors
 
-Development Team
+MP
 
 ## 📞 Support
 
